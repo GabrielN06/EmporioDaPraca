@@ -45,6 +45,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    position: relative;
 }
 
 .nav-links {
@@ -231,4 +232,71 @@ footer {
     .split-image img { height: 300px; }
     .home-hero-title { font-size: 2rem; }
     .footer-content { flex-direction: column; gap: 30px; text-align: center; align-items: center;}
+}
+
+/* BOTÃO HAMBURGUER */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* MENU MOBILE */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 70px; /* sobe junto do header */
+    right: 20px; /* canto direito */
+    width: 180px;
+    border-radius: 12px;
+    padding: 15px 0;
+    z-index: 9999;
+}
+
+
+.mobile-menu a {
+    padding: 12px 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.mobile-menu a:hover {
+    background: #f5f5f5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .nav-bar {
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none; /* some os links normais */
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .hamburger {
+        display: block; /* aparece só no mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        right: 20px;   /* encosta no lado direito */
+        top: 15px;     /* alinha na mesma altura do header */
+        z-index: 10000; /* garante que fique por cima */
+    }
+
+    .logo {
+        margin: 0 auto; /* centraliza a logo */
+    }
 }
