@@ -102,15 +102,29 @@ header {
 }
 
 .padaria-page .product-grid {
-    display: flex;              /* Troca para Flexbox */
-    justify-content: center;    /* Centraliza os 3 cards */
-    flex-wrap: wrap;            
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .padaria-page .card {
-    /* Define uma largura fixa para o Flexbox (garantindo que não estiquem) */
-    flex: 0 0 280px; 
+    width: 100%;
 }
+
+/* Centralizar grid da Padaria apenas no desktop */
+@media (min-width: 769px) {
+    .padaria-page .product-grid {
+        justify-content: center;   /* centraliza */
+        display: flex;             /* mantém flex */
+        flex-wrap: wrap;           /* mantém quebra */
+        gap: 25px;
+    }
+
+    .padaria-page .card {
+        width: 280px;              /* mesma largura anterior */
+    }
+}
+
 
 .card img {
     width: 100%;
