@@ -19,7 +19,10 @@ body {
     font-family: var(--font-sans);
     color: var(--text-color);
     line-height: 1.6;
+    padding-top: 90px; /* ajusta conforme o tamanho final do seu header */
 }
+
+
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -33,30 +36,50 @@ ul { list-style: none; }
 
 /* --- Cabeçalho (Header) --- */
 header {
-    background-color: #fff;
-    padding: 15px 0;
+    background-color: #ffffff !important; /* força o fundo branco */
+    padding: 12px 0; /* altura equilibrada */
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* garante que fica acima de tudo */
 }
+
+
+.left-links, .right-links {
+    display: flex;
+    gap: 25px; /* aproxima os botões da logo */
+}
+
+
 
 .nav-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* vai centralizar tudo */
     align-items: center;
+    gap: 60px; /* distância entre logo e menus */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     position: relative;
+    
+    background-color: #ffffff; /* garante fundo nos elementos internos */
 }
+
+
+
+
 
 .nav-links {
     display: flex;
     gap: 40px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .logo img {
-    height: 80px; /* Ajuste conforme o tamanho real da sua logo */
+    height: 90px; /* Ajuste conforme o tamanho real da sua logo */
 }
 
 /* --- Títulos de Página --- */
