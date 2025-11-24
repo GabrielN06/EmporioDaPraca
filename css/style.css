@@ -19,7 +19,7 @@ body {
     font-family: var(--font-sans);
     color: var(--text-color);
     line-height: 1.6;
-    padding-top: 90px; /* ajusta conforme o tamanho final do seu header */
+    padding-top: 90px;
 }
 
 
@@ -36,15 +36,17 @@ ul { list-style: none; }
 
 /* --- Cabeçalho (Header) --- */
 header {
-    background-color: #ffffff !important; /* força o fundo branco */
-    padding: 12px 0; /* altura equilibrada */
+    background-color: #ffffff !important;
+    padding: 8px 0;    /* 🔥 MENU MAIS FINO */
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; /* garante que fica acima de tudo */
+    z-index: 9999;
+    padding: 6px 0;
 }
+
 
 
 .left-links, .right-links {
