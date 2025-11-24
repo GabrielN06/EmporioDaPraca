@@ -1,194 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Empório da Praça - Mercado</title>
-        <link rel="stylesheet" href="css/style.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empório da Praça - Mercado</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script>
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
-</script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</head>
 
-    <body>
+<body>
 
-        <header>
-    <nav class="nav-bar">
+    <header>
+        <nav class="nav-bar">
 
-        <!-- Botão Hamburguer (aparece só no celular) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
-        </div>
-
-        <!-- MENU MOBILE (AGORA DENTRO DA NAV) -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html">Início</a>
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
-
-        <div class="nav-links left-links">
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-        </div>
-
-        <div class="logo">
-            <a href="index.html"><img src="imgs/logo.png" alt="Logo Empório da Praça"></a>
-        </div>
-
-        <div class="nav-links right-links">
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
-
-    </nav>
-</header>
-
-        <main class="container">
-            <div class="page-title-box">
-                <h1>Mercado</h1>
+            <!-- Botão Hamburguer (mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
             </div>
 
-            <div class="product-grid">
-            
-                <div class="card">
-                    <img src="imgs/detergente.png" alt="Detergente">
-                    <div class="card-content">
-                        <h3>Detergente</h3>
-                        <p>Detergente líquido para limpeza de louças. Alta remoção de gordura e fórmula concentrada.</p>
-                        <span class="price">R$ 7,99</span>
-                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/leite.png" alt="Leite">
-                    <div class="card-content">
-                        <h3>Leite</h3>
-                        <p>Leite integral UHT, sabor leve e nutritivo. Ideal para café da manhã e receitas.</p>
-                        <span class="price">R$ 12,99</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/farinha.png" alt="Farinha">
-                    <div class="card-content">
-                        <h3>Farinha</h3>
-                        <p>Farinha de trigo branca para pães, bolos e massas em geral. Textura fina e de fácil uso</p>
-                        <span class="price">R$ 5,49</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/biscoito.png" alt="Biscoito">
-                    <div class="card-content">
-                        <h3>Biscoito Recheado</h3>
-                        <p>Biscoito crocante com recheio sabor chocolate. Perfeito para lanches e sobremesas.</p>
-                        <span class="price">R$ 10,99</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/salgadinho.png" alt="Salgadinho">
-                    <div class="card-content">
-                        <h3>Salgadinho</h3>
-                        <p>Salgadinho crocante sabor queijo. Ideal para petiscar a qualquer hora.</p>
-                        <span class="price">R$ 7,99</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/ovos.png" alt="Ovos">
-                    <div class="card-content">
-                        <h3>Ovos</h3>
-                        <p>Ovos brancos frescos, ideais para omeletes, bolos e preparo diário.</p>
-                        <span class="price">R$ 12,99</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/extrato de tomate.png" alt="Extrato de Tomate">
-                    <div class="card-content">
-                        <h3>Extrato de Tomate</h3>
-                        <p>Extrato de tomate concentrado, ideal para molhos, sopas e temperos.</p>
-                        <span class="price">R$ 5,49</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/amaciante.png" alt="Amaciante">
-                    <div class="card-content">
-                        <h3>Amaciante</h3>
-                        <p>Amaciante líquido para roupas, com perfume suave e ação que deixa os tecidos macios.</p>
-                        <span class="price">R$ 10,99</span>
-                    </div>
-                 </div>
-
-                <div class="card">
-                    <img src="imgs/laranja.png" alt="Laranja Pera">
-                    <div class="card-content">
-                        <h3>Laranja Pera</h3>
-                        <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
-                        <span class="price">R$ 7,99/kg</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/uva roxa.png" alt="Uva Roxa">
-                    <div class="card-content">
-                        <h3>Uva Roxa</h3>
-                        <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
-                        <span class="price">R$ 12,99/kg</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/batatas.png" alt="Batatas">
-                    <div class="card-content">
-                        <h3>Batatas</h3>
-                        <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
-                        <span class="price">R$ 5,49/kg</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imgs/brocolis.png" alt="Brócolis">
-                    <div class="card-content">
-                        <h3>Brócolis</h3>
-                        <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
-                        <span class="price">R$ 10,99/kg</span>
-                    </div>
-                 </div>
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="index.html">Início</a>
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
             </div>
-        </main>
 
-            <footer>
+            <!-- Links esquerda -->
+            <div class="nav-links left-links">
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="Logo Empório da Praça">
+                </a>
+            </div>
+
+            <!-- Links direita -->
+            <div class="nav-links right-links">
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <div class="page-title-box">
+            <h1>Mercado</h1>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="imgs/detergente.png" alt="Detergente">
+                <div class="card-content">
+                    <h3>Detergente</h3>
+                    <p>Detergente líquido para limpeza de louças. Alta remoção de gordura e fórmula concentrada.</p>
+                    <span class="price">R$ 7,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/leite.png" alt="Leite">
+                <div class="card-content">
+                    <h3>Leite</h3>
+                    <p>Leite integral UHT, sabor leve e nutritivo. Ideal para café da manhã e receitas.</p>
+                    <span class="price">R$ 12,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/farinha.png" alt="Farinha">
+                <div class="card-content">
+                    <h3>Farinha</h3>
+                    <p>Farinha de trigo branca para pães, bolos e massas em geral. Textura fina e de fácil uso.</p>
+                    <span class="price">R$ 5,49</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/biscoito.png" alt="Biscoito">
+                <div class="card-content">
+                    <h3>Biscoito Recheado</h3>
+                    <p>Biscoito crocante com recheio sabor chocolate. Perfeito para lanches e sobremesas.</p>
+                    <span class="price">R$ 10,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/salgadinho.png" alt="Salgadinho">
+                <div class="card-content">
+                    <h3>Salgadinho</h3>
+                    <p>Salgadinho crocante sabor queijo. Ideal para petiscar a qualquer hora.</p>
+                    <span class="price">R$ 7,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/ovos.png" alt="Ovos">
+                <div class="card-content">
+                    <h3>Ovos</h3>
+                    <p>Ovos brancos frescos, ideais para omeletes, bolos e preparo diário.</p>
+                    <span class="price">R$ 12,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/extrato de tomate.png" alt="Extrato de Tomate">
+                <div class="card-content">
+                    <h3>Extrato de Tomate</h3>
+                    <p>Extrato de tomate concentrado, ideal para molhos, sopas e temperos.</p>
+                    <span class="price">R$ 5,49</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/amaciante.png" alt="Amaciante">
+                <div class="card-content">
+                    <h3>Amaciante</h3>
+                    <p>Amaciante líquido para roupas, com perfume suave e ação que deixa os tecidos macios.</p>
+                    <span class="price">R$ 10,99</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/laranja.png" alt="Laranja Pera">
+                <div class="card-content">
+                    <h3>Laranja Pera</h3>
+                    <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
+                    <span class="price">R$ 7,99/kg</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/uva roxa.png" alt="Uva Roxa">
+                <div class="card-content">
+                    <h3>Uva Roxa</h3>
+                    <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
+                    <span class="price">R$ 12,99/kg</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/batatas.png" alt="Batatas">
+                <div class="card-content">
+                    <h3>Batatas</h3>
+                    <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
+                    <span class="price">R$ 5,49/kg</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/brocolis.png" alt="Brócolis">
+                <div class="card-content">
+                    <h3>Brócolis</h3>
+                    <p>Verdes, saudáveis, crocantes, frescos, nutritivos, deliciosos.</p>
+                    <span class="price">R$ 10,99/kg</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
         <div class="container footer-content">
+
             <div class="footer-col logo-footer">
                 <img src="imgs/logo.png" alt="Logo" style="height: 100px;">
             </div>
-            
-            <div class="footer-col" style="min-width: 250px;"> <h4>EMPÓRIO DA PRAÇA</h4>
+
+            <div class="footer-col" style="min-width: 250px;">
+                <h4>EMPÓRIO DA PRAÇA</h4>
                 <p style="margin-bottom: 10px;">
                     Endereço: Av. Dino Bueno, 67 - Ponta da Praia, Santos - SP, 11030-000<br>
                     CNPJ: 45.646.498/0001-00
                 </p>
-                
+
                 <iframe
-                    width="100%" 
-                    height="150" 
-                    style="border:0; border-radius: 8px; margin-bottom: 5px;" 
-                    loading="lazy" 
-                    allowfullscreen 
+                    width="100%"
+                    height="150"
+                    style="border:0; border-radius: 8px; margin-bottom: 5px;"
+                    loading="lazy"
+                    allowfullscreen
                     src="https://maps.google.com/maps?q=Av.%20Dino%20Bueno%2C%2067%20-%20Ponta%20da%20Praia%2C%20Santos%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed">
                 </iframe>
-                
-                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP" target="_blank" style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP"
+                    target="_blank"
+                    style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
                     Ver localização no Google Maps ↗
                 </a>
             </div>
@@ -202,6 +218,7 @@ function toggleMenu() {
                     <li><a href="encomendas.html">Encomendas</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <p>(13) 3325-9455</p>
                 <div class="social-icons">
@@ -209,11 +226,14 @@ function toggleMenu() {
                         <img src="imgs/logoInsta.png" alt="logo do instagram" style="height: 30px;">
                     </a>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="imgs/logoFace.png" alt="logo do faceboook" style="height: 30px;"> 
+                        <img src="imgs/logoFace.png" alt="logo do facebook" style="height: 30px;">
                     </a>
-                 </div>
+                </div>
             </div>
+
         </div>
     </footer>
-    </body>
+
+</body>
+
 </html>

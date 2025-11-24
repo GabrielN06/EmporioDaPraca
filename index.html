@@ -4,56 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empório da Praça - Home</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
 </head>
-
-<script>
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
-</script>
-
 
 <body>
 
-<header>
-    <nav class="nav-bar">
+    <header>
+        <nav class="nav-bar">
 
-        <!-- Botão Hamburguer (aparece só no celular) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
-        </div>
+            <!-- Botão Hamburguer (mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
 
-        <!-- MENU MOBILE (AGORA DENTRO DA NAV) -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html">Início</a>
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
+            <!-- MENU MOBILE -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="index.html">Início</a>
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
+            </div>
 
-        <div class="nav-links left-links">
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-        </div>
+            <!-- Links lado esquerdo -->
+            <div class="nav-links left-links">
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+            </div>
 
-        <div class="logo">
-            <a href="index.html"><img src="imgs/logo.png" alt="Logo Empório da Praça"></a>
-        </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="Logo Empório da Praça">
+                </a>
+            </div>
 
-        <div class="nav-links right-links">
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
+            <!-- Links lado direito -->
+            <div class="nav-links right-links">
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
+            </div>
 
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
     <main class="container">
+
         <h1 class="home-hero-title">EMPÓRIO DA PRAÇA</h1>
 
         <div class="page-title-box">
@@ -61,6 +67,7 @@ function toggleMenu() {
         </div>
 
         <div class="product-grid">
+
             <div class="card">
                 <img src="imgs/laranja.png" alt="Laranja">
                 <div class="card-content">
@@ -69,6 +76,7 @@ function toggleMenu() {
                     <span class="price">R$ 7,99/kg</span>
                 </div>
             </div>
+
             <div class="card">
                 <img src="imgs/uva roxa.png" alt="Uva">
                 <div class="card-content">
@@ -77,6 +85,7 @@ function toggleMenu() {
                     <span class="price">R$ 12,99/kg</span>
                 </div>
             </div>
+
             <div class="card">
                 <img src="imgs/batatas.png" alt="Batata">
                 <div class="card-content">
@@ -85,45 +94,55 @@ function toggleMenu() {
                     <span class="price">R$ 5,49/kg</span>
                 </div>
             </div>
+
             <div class="card">
-                <img src="imgs/brocolis.png" alt="Brocolis">
+                <img src="imgs/brocolis.png" alt="Brócolis">
                 <div class="card-content">
                     <h3>Brócolis</h3>
-                    <p>Verdes, saudáveis, crocantes, frescos, nutrivos.</p>
+                    <p>Verdes, saudáveis, crocantes, frescos, nutritivos.</p>
                     <span class="price">R$ 10,99/kg</span>
                 </div>
             </div>
+
         </div>
 
         <section class="welcome-box">
             <h3>Seja Bem-Vindo ao Empório da Praça!</h3>
             <br>
-            <p style="font-size: 18px;">Descubra um lugar onde a tradição encontra a qualidade. No Empório da Praça, você encontra uma seleção cuidadosa de produtos frescos, itens gourmets e delícias artesanais. Explore nossos sabores e encontre tudo o que você precisa para tornar seus momentos mais especiais. Sua experiência começa aqui!</p>
+            <p style="font-size: 18px;">
+                Descubra um lugar onde a tradição encontra a qualidade. No Empório da Praça, você encontra uma seleção cuidadosa de produtos frescos, itens gourmets e delícias artesanais. Explore nossos sabores e encontre tudo o que você precisa para tornar seus momentos mais especiais. Sua experiência começa aqui!
+            </p>
         </section>
+
     </main>
+
 
     <footer>
         <div class="container footer-content">
+
             <div class="footer-col logo-footer">
                 <img src="imgs/logo.png" alt="Logo" style="height: 100px;">
             </div>
-            
-            <div class="footer-col" style="min-width: 250px;"> <h4>EMPÓRIO DA PRAÇA</h4>
+
+            <div class="footer-col" style="min-width: 250px;">
+                <h4>EMPÓRIO DA PRAÇA</h4>
                 <p style="margin-bottom: 10px;">
                     Endereço: Av. Dino Bueno, 67 - Ponta da Praia, Santos - SP, 11030-000<br>
                     CNPJ: 45.646.498/0001-00
                 </p>
-                
+
                 <iframe
-                    width="100%" 
-                    height="150" 
-                    style="border:0; border-radius: 8px; margin-bottom: 5px;" 
-                    loading="lazy" 
-                    allowfullscreen 
+                    width="100%"
+                    height="150"
+                    style="border:0; border-radius: 8px; margin-bottom: 5px;"
+                    loading="lazy"
+                    allowfullscreen
                     src="https://maps.google.com/maps?q=Av.%20Dino%20Bueno%2C%2067%20-%20Ponta%20da%20Praia%2C%20Santos%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed">
                 </iframe>
-                
-                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP" target="_blank" style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP"
+                   target="_blank"
+                   style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
                     Ver localização no Google Maps ↗
                 </a>
             </div>
@@ -137,6 +156,7 @@ function toggleMenu() {
                     <li><a href="encomendas.html">Encomendas</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <p>(13) 3325-9455</p>
                 <div class="social-icons">
@@ -144,11 +164,13 @@ function toggleMenu() {
                         <img src="imgs/logoInsta.png" alt="logo do instagram" style="height: 30px;">
                     </a>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="imgs/logoFace.png" alt="logo do faceboook" style="height: 30px;"> 
+                        <img src="imgs/logoFace.png" alt="logo do facebook" style="height: 30px;">
                     </a>
-                 </div>
+                </div>
             </div>
+
         </div>
     </footer>
+
 </body>
 </html>

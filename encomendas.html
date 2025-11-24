@@ -1,104 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empório da Praça - Home</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
 
-<script>
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
-</script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</head>
 
 <body>
 
     <header>
-    <nav class="nav-bar">
+        <nav class="nav-bar">
 
-        <!-- Botão Hamburguer (aparece só no celular) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
-        </div>
+            <!-- Botão Hamburguer (aparece só no celular) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
 
-        <!-- MENU MOBILE (AGORA DENTRO DA NAV) -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="index.html">Início</a>
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
+            <!-- MENU MOBILE -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="index.html">Início</a>
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
+            </div>
 
-        <div class="nav-links left-links">
-            <a href="mercado.html">Mercado</a>
-            <a href="hortifruit.html">Hortifruit</a>
-        </div>
+            <!-- Links esquerda -->
+            <div class="nav-links left-links">
+                <a href="mercado.html">Mercado</a>
+                <a href="hortifruit.html">Hortifruit</a>
+            </div>
 
-        <div class="logo">
-            <a href="index.html"><img src="imgs/logo.png" alt="Logo Empório da Praça"></a>
-        </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.png" alt="Logo Empório da Praça">
+                </a>
+            </div>
 
-        <div class="nav-links right-links">
-            <a href="padaria.html">Padaria</a>
-            <a href="encomendas.html">Encomendas</a>
-        </div>
+            <!-- Links direita -->
+            <div class="nav-links right-links">
+                <a href="padaria.html">Padaria</a>
+                <a href="encomendas.html">Encomendas</a>
+            </div>
 
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
-     <main class="container">
+    <main class="container">
+
         <div class="page-title-box">
             <h1>Encomendas</h1>
         </div>
 
         <div class="split-section">
+
             <div class="split-image">
                 <img src="imgs/Bolo.png" alt="Bolo de casamento">
             </div>
+
             <div class="split-content">
                 <h2>Encomendas de Bolos e Salgados para Suas Celebrações!</h2>
+
                 <p>Planejando um evento especial? Deixe que o Empório da Praça cuide dos detalhes deliciosos! Aceitamos encomendas de bolos personalizados e uma variedade de salgados fresquinhos para tornar sua festa inesquecível.</p>
+
                 <p>Para garantir a qualidade e a atenção que sua encomenda merece, pedimos que os pedidos sejam feitos com pelo menos 48 horas de antecedência para salgados e 72 horas para bolos personalizados.</p>
-                
+
                 <p><strong>Como fazer sua encomenda:</strong></p>
+
                 <ol>
                     <li><strong>Entre em contato:</strong> Fale conosco pelo telefone ou visite nossa loja para discutir suas opções.</li>
                     <li><strong>Detalhes:</strong> Informe o tipo de bolo ou salgado, quantidade, tema (para bolos), data e horário de retirada.</li>
                     <li><strong>Confirmação:</strong> Finalize seu pedido e aguarde nossa confirmação!</li>
                 </ol>
+
                 <p>Estamos prontos para adoçar e salgar seus momentos mais importantes!</p>
             </div>
+
         </div>
+
     </main>
 
-        <footer>
+
+    <footer>
         <div class="container footer-content">
+
             <div class="footer-col logo-footer">
                 <img src="imgs/logo.png" alt="Logo" style="height: 100px;">
             </div>
-            
-            <div class="footer-col" style="min-width: 250px;"> <h4>EMPÓRIO DA PRAÇA</h4>
+
+            <div class="footer-col" style="min-width: 250px;">
+                <h4>EMPÓRIO DA PRAÇA</h4>
+
                 <p style="margin-bottom: 10px;">
                     Endereço: Av. Dino Bueno, 67 - Ponta da Praia, Santos - SP, 11030-000<br>
                     CNPJ: 45.646.498/0001-00
                 </p>
-                
+
                 <iframe
-                    width="100%" 
-                    height="150" 
-                    style="border:0; border-radius: 8px; margin-bottom: 5px;" 
-                    loading="lazy" 
-                    allowfullscreen 
+                    width="100%"
+                    height="150"
+                    style="border:0; border-radius: 8px; margin-bottom: 5px;"
+                    loading="lazy"
+                    allowfullscreen
                     src="https://maps.google.com/maps?q=Av.%20Dino%20Bueno%2C%2067%20-%20Ponta%20da%20Praia%2C%20Santos%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed">
                 </iframe>
-                
-                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP" target="_blank" style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Dino+Bueno,+67+-+Ponta+da+Praia,+Santos+-+SP"
+                    target="_blank"
+                    style="color: #A63A3A; font-size: 14px; font-weight: bold; text-decoration: underline;">
                     Ver localização no Google Maps ↗
                 </a>
             </div>
@@ -112,6 +134,7 @@ function toggleMenu() {
                     <li><a href="encomendas.html">Encomendas</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <p>(13) 3325-9455</p>
                 <div class="social-icons">
@@ -119,12 +142,14 @@ function toggleMenu() {
                         <img src="imgs/logoInsta.png" alt="logo do instagram" style="height: 30px;">
                     </a>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="imgs/logoFace.png" alt="logo do faceboook" style="height: 30px;"> 
+                        <img src="imgs/logoFace.png" alt="logo do faceboook" style="height: 30px;">
                     </a>
-                 </div>
+                </div>
             </div>
+
         </div>
     </footer>
-    
+
 </body>
+
 </html>
