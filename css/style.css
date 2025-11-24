@@ -172,12 +172,12 @@ header {
 }
 
 .split-content h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
 .split-content p, .split-content li {
-    font-size: 14px;
+    font-size: 17px;
     color: #555;
     margin-bottom: 15px;
 }
