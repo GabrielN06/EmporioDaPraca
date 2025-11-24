@@ -67,10 +67,6 @@ header {
     background-color: #ffffff; /* garante fundo nos elementos internos */
 }
 
-
-
-
-
 .nav-links {
     display: flex;
     gap: 40px;
