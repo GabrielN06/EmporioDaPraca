@@ -37,7 +37,7 @@ ul { list-style: none; }
 /* --- Cabeçalho (Header) --- */
 header {
     background-color: #ffffff !important;
-    padding: 8px 0;    /* 🔥 MENU MAIS FINO */
+    padding: 8px 0;    
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: fixed;
     top: 0;
@@ -53,6 +53,8 @@ header {
     display: flex;
     gap: 25px; /* aproxima os botões da logo */
 }
+
+
 
 
 
@@ -77,7 +79,7 @@ header {
 }
 
 .logo img {
-    height: 90px; /* Ajuste conforme o tamanho real da sua logo */
+    height: 110px; /* Ajuste conforme o tamanho real da sua logo */
 }
 
 /* --- Títulos de Página --- */
@@ -315,7 +317,7 @@ footer {
     }
 
     .logo img {
-        height: 90px;
+        height: 110px;
     }
 
     .hamburger {
